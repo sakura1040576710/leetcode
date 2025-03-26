@@ -1,7 +1,6 @@
-package LinkedList;
+package linkedlist;
 
 import java.io.IOException;
-import java.util.List;
 
 /**
  * 142.环形链表2

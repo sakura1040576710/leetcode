@@ -1,7 +1,6 @@
-package LinkedList;
+package linkedlist;
 
 import java.io.IOException;
-import java.util.List;
 
 /**
  * 2. 两数相加
