@@ -29,19 +29,18 @@ public class SelectSort {
         // 索引 >= sortedIndex 的元素都是未排序的
         int sortIndex = 0;
         while(sortIndex < n) {
+            // 找到未排序部分 [sortedIndex, n) 中的最小值
             int minIndex = sortIndex;
-
-            int i;
-            for(i = sortIndex; i < n; ++i) {
+            for(int i = sortIndex; i < n; ++i) {
                 if (nums[i] < nums[minIndex]) {
                     minIndex = i;
                 }
             }
 
-            i = nums[sortIndex];
+            int tmp = nums[sortIndex];
             nums[sortIndex] = nums[minIndex];
-            nums[minIndex] = i;
-            ++sortIndex;
+            nums[minIndex] = tmp;
+            sortIndex++;
             System.out.println(Arrays.toString(nums));
         }
 

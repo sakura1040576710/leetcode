@@ -3,13 +3,24 @@ package sort;
 import java.util.Arrays;
 
 /**
- * 选择排序
+ * 冒泡排序
  * 时间复杂度 O(n^2)
  * 空间复杂度 O(1)
  * 稳定排序
  */
 public class BubbleSort {
 
+    /**
+     * [3, 4, 1, 5, 9, 2, 1, 6]
+     * [1, 3, 4, 5, 9, 2, 1, 6]
+     * [1, 1, 3, 4, 5, 9, 2, 6]
+     * [1, 1, 2, 3, 4, 5, 9, 6]
+     * [1, 1, 2, 3, 4, 5, 9, 6]
+     * [1, 1, 2, 3, 4, 5, 9, 6]
+     * [1, 1, 2, 3, 4, 5, 9, 6]
+     * [1, 1, 2, 3, 4, 5, 6, 9]
+     * [1, 1, 2, 3, 4, 5, 6, 9]
+     */
     public static void sort(int[] nums) {
         int n = nums.length;
         int sortedIndex = 0;
